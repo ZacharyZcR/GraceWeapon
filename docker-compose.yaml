@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  ubuntu-sqlmap-nmap:
+    build: .
+    container_name: ubuntu_container
+    tty: true
