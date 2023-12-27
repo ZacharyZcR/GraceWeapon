@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  weapon:
+    build: .
+    container_name: weapon
+    tty: true
