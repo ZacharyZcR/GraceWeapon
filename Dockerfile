@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install -y zsh curl git net-tools
 
 # 安装Oh My Zsh
-RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+RUN sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 
 # 安装zsh-autosuggestions插件
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
