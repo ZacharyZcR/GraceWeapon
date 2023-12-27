@@ -1,5 +1,5 @@
-# 使用Ubuntu 22.04作为基础镜像
-FROM ubuntu:22.04
+# 基础设置阶段
+FROM ubuntu:22.04 as base
 
 # 更新apt包管理器并安装所需的软件
 RUN apt-get update && \
@@ -13,6 +13,9 @@ RUN git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 
 # 重命名sqlmap.py为sqlmap
 RUN ln -s /sqlmap-dev/sqlmap.py /usr/bin/sqlmap
+
+# 环境配置阶段
+FROM base as final
 
 # 安装Oh My Zsh
 RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
