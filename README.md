@@ -19,7 +19,7 @@ GraceWeapon项目特别选择了`zsh`作为命令行界面，结合`Oh My Zsh`�
 3. **ffuf**: 高速web模糊测试工具，适用于路径发现、子域名枚举等。
    - [ffuf GitHub](https://github.com/ffuf/ffuf)
 4. **dirsearch**: web路径扫描工具，用于发现web服务上的隐藏目录和文件。
-   - dirsearch GitHub
+   - [dirsearch GitHub](https://github.com/maurosoria/dirsearch.git)
 5. **masscan**: 超快速端口扫描器，用于网络端口的安全检查。
    - [masscan GitHub](https://github.com/robertdavidgraham/masscan)
 6. **JSFinder**: 专注于分析JavaScript文件以提取URL和子域名。
@@ -32,7 +32,7 @@ GraceWeapon的部署非常直接，以下是基本步骤：
 1. **克隆项目**: 从GitHub克隆GraceWeapon项目。
 
    ```
-   git clone https://github.com/your-username/GraceWeapon.git
+   git clone https://github.com/ZacharyZcR/GraceWeapon.git
    ```
 
 2. **启动环境**: 使用docker-compose在后台启动服务。
